@@ -9020,7 +9020,8 @@ function Invoke-MsGraphRefreshPIM {
 
 #Get all active Entra role assignments
 function Get-EntraPIMRoleAssignments {
-
+	$global:GLOBALPIMForEntraRolesChecked = $false
+	Return
     Write-Host "[*] Get PIM Entra role assignments"
 
     $TenantPIMRoleAssignments = @()
